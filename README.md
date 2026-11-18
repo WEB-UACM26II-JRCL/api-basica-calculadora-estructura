@@ -10,3 +10,21 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ## Documentacion
 http://127.0.0.1:8000/docs
+
+## Capturas de comunicacion Frontend - Backend
+
+**Resta (8 - 2):**
+![Resta](capturas/resta.png)
+
+**Multiplicacion (8 * 2):**
+![Multiplicacion](capturas/multiplicar.png)
+
+**Division (8 / 2):**
+![Division](capturas/division.png)
+
+**Division entre cero (Error HTTP 400):**
+![Division entre cero](<capturas/division a cero.png>)
+
+### Prueba Paso 5.2 (CORS - Simulando frontend externo)
+![Prueba de paso 5.2](capturas/paso5_2.png)
+
