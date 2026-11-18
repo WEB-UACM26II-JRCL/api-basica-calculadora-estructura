@@ -28,3 +28,5 @@ http://127.0.0.1:8000/docs
 ### Prueba Paso 5.2 (CORS - Simulando frontend externo)
 ![Prueba de paso 5.2](capturas/paso5_2.png)
 
+### Prueba Paso 7.1 (Validacion de DTO de entrada)
+![Prueba de paso 7.1](capturas/paso7_1.png)

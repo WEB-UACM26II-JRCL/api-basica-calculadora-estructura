@@ -12,21 +12,26 @@ app.add_middleware(
     allow_headers=["Content-Type"],
 )
 
+
 class Numeros(BaseModel):
     a: float
     b: float
+
 
 @app.get("/sumar")
 def sumar(a: float, b: float):
     return {"resultado": a + b}
 
+
 @app.get("/restar")
 def restar(a: float, b: float):
     return {"resultado": a - b}
 
+
 @app.post("/multiplicar")
 def multiplicar(datos: Numeros):
     return {"resultado": datos.a * datos.b}
+
 
 @app.post("/dividir")
 def dividir(datos: Numeros):
