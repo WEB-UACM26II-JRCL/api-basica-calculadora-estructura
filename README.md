@@ -36,3 +36,6 @@ http://127.0.0.1:8000/docs
 
 ### Prueba Paso 8.2 (Capa de servicio en interprete Python)
 ![Prueba de paso 8.2](capturas/paso8_2_1.png)
+
+### Prueba Paso 9.1 (Controlador, rutas HTTP y error 400)
+![Prueba de paso 9.1](capturas/paso9_1.png)
