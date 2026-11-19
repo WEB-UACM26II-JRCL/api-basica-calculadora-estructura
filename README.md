@@ -30,3 +30,6 @@ http://127.0.0.1:8000/docs
 
 ### Prueba Paso 7.1 (Validacion de DTO de entrada)
 ![Prueba de paso 7.1](capturas/paso7_1.png)
+
+### Prueba Paso 8.2 (Logica de negocio en capa de servicio)
+![Prueba de paso 8.2](capturas/paso8_2.png)
