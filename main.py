@@ -1,8 +1,8 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from app.controllers.calculadora_controller import router
 
-app = FastAPI(title="Calculadora version inicial")
+app = FastAPI(title="Calculadora arquitectura en capas")
 
 app.add_middleware(
     CORSMiddleware,
@@ -12,29 +12,4 @@ app.add_middleware(
     allow_headers=["Content-Type"],
 )
 
-
-class Numeros(BaseModel):
-    a: float
-    b: float
-
-
-@app.get("/sumar")
-def sumar(a: float, b: float):
-    return {"resultado": a + b}
-
-
-@app.get("/restar")
-def restar(a: float, b: float):
-    return {"resultado": a - b}
-
-
-@app.post("/multiplicar")
-def multiplicar(datos: Numeros):
-    return {"resultado": datos.a * datos.b}
-
-
-@app.post("/dividir")
-def dividir(datos: Numeros):
-    if datos.b == 0:
-        raise HTTPException(status_code=400, detail="No se puede dividir entre cero")
-    return {"resultado": datos.a / datos.b}
+app.include_router(router)
